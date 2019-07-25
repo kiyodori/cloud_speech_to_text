@@ -7,5 +7,8 @@ namespace :cloud_speech_to_text do
   task :upload do |t|
   end
 
+  desk "request cloud speech_to_text api"
+  task :request do |t|
+  end
 end
 
