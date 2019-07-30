@@ -5,7 +5,8 @@
 - 話者を区別する
 
 ## どう使うの？
-1. 事前準備
+### 1. 事前準備
+
 必要なライブラリをインストールする。
 
 ```
@@ -31,21 +32,21 @@ Google Cloud Platform のAPIとサービスからAPIキーを作成する。
 
 Google Cloud Platform の Cloud Speech-to-Text API を該当プロジェクトで有効にする。
 
-2. `mov`ファイルを`input.MOV`というファイル名で`input/`ディレクトリ配下に設置
+### 2. `mov`ファイルを`input.MOV`というファイル名で`input/`ディレクトリ配下に設置
 
-3. `mov`ファイルを`flac`ファイルに変換
+### 3. `mov`ファイルを`flac`ファイルに変換
 
 ```
 $ rake cloud_speech_to_text:encode
 ```
 
-4. Google Cloud Storage に`flac`ファイルをアップロード
+### 4. Google Cloud Storage に`flac`ファイルをアップロード
 
 ```
 $ rake cloud_speech_to_text:upload
 ```
 
-5. 文字起こし
+### 5. 文字起こし
 
 ```
 $ rake cloud_speech_to_text:request
